@@ -1,0 +1,31 @@
+:root {
+    --cantidad_cuadros:7;
+    --size_cuadro: 70px;
+    --size_cuadro_drag: 80px;
+  }
+.container{
+    display: grid;
+    grid-template-columns: repeat(var(--cantidad_cuadros),var(--size_cuadro_drag));
+    justify-content: center;
+}
+.cuadro{
+    background-color: gray;
+    border: 1px solid black;
+    width: var(--size_cuadro_drag);
+    height: var(--size_cuadro_drag);
+    
+}
+
+.cuadro-drag{
+    background-color: red;
+    border: 1px solid black;
+    width: var(--size_cuadro);
+    height: var(--size_cuadro);
+    padding: 5px;
+
+    
+}
+img{
+    width: var(--size_cuadro);
+    height: var(--size_cuadro);
+}
