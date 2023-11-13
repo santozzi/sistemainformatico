@@ -5,6 +5,7 @@ import authRoutes from './routes/auth.routes';
 import passportMiddleware from './middlewares/passport';
 import passport from 'passport';
 import specialRoutes from './routes/special.routes';
+import gabineteRoutes from './routes/gabinete.routes';
 //inializacion
 const app = express();
 
@@ -25,4 +26,5 @@ app.get('/', (req, res) => {
     );
 app.use(authRoutes);
 app.use(specialRoutes);
+app.use(gabineteRoutes);
 export default app;
