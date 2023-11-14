@@ -21,7 +21,7 @@ app.use(passport.initialize());
 passport.use(passportMiddleware);
 //routes    
 app.get('/', (req, res) => {
-     res.send(`The API is at http://localhost:${app.get('port')}`);    
+     res.send(`The API is at http://192.168.1.117:${app.get('port')}`);    
 }
     );
 app.use(authRoutes);

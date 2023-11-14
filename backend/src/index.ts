@@ -12,4 +12,4 @@ let gabinete = new Gabinete(5,5,"gabinete1");
 let puesto1 = new Puesto("1");
 gabinete.insertarPuesto(3,0,puesto1);
 console.log(gabinete.getPuesto(3,0));
-console.log(gabinete.columnas);
+console.log(gabinete.columnas); 

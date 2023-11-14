@@ -36,17 +36,19 @@ export class Gabinete implements IGabinete{
     filas: number;
     columnas: number;
     nombre:string;
+    contId:number;
     constructor(filas: number,columnas: number,nombre:string) { 
         this.gabinete = new Array<Array<IPuesto>>();
         this.filas = filas;
         this.columnas = columnas;
         this.nombre = nombre;
         this.ocupados = new Array<IPuesto>();
+        this.contId=0;
 
         for (var i = 0; i < filas; i++) {
             this.gabinete[i] = new Array<IPuesto>();
             for (var j = 0; j < columnas; j++) {
-                this.gabinete[i][j] = new Puesto("-1");
+                this.gabinete[i][j] = new Puesto(""+this.contId++);
             }
         }
        

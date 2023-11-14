@@ -3,6 +3,9 @@
     --size_cuadro: 70px;
     --size_cuadro_drag: 80px;
   }
+  body{
+    background-color: black;
+  }
 .container{
     display: grid;
     grid-template-columns: repeat(var(--cantidad_cuadros),var(--size_cuadro_drag));
@@ -27,5 +30,5 @@
 }
 img{
     width: var(--size_cuadro);
-    height: var(--size_cuadro);
+    height: var(--size_cuadro); 
 }
